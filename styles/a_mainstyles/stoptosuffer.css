@@ -1,0 +1,160 @@
+.stoptosufferdiv {
+    background-color: #1C1C1E;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 254px;
+    font-size: 65px;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 130px;
+}
+
+.stoptosuffertext {
+    background: linear-gradient(358.74deg, #676767 18.3%, #FFFFFF 54.91%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.stoptosuffertable-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.stoptosuffertable {
+    color: white;
+    width: 100%;
+    max-width: 1920px;
+    min-width: 0;
+    border: 0;
+    border-collapse: collapse;
+    padding: 0;
+    text-align: center;
+    height: 955px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.stst_background {
+    position: relative;
+    text-align: center;
+}
+
+.stst_background_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1920px;
+    z-index: -1;
+}
+
+.stst_of {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    color: #FF5500;
+    font-weight: 700;
+    font-size: 60px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000000;
+}
+
+.stst_os {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 90px;
+    font-style: italic;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #FF5500;
+}
+
+.stst_bf {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    color: #3EA8FF;
+    font-weight: 700;
+    font-size: 60px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000000;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.stst_bs {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 90px;
+    font-style: italic;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #008CFF;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1300px) {
+    .stoptosuffertable {
+        background: linear-gradient(180deg, #000000 0%, #00000000 50%, #00000000 80%, #1C1C1E 100%),
+                linear-gradient(90deg, #aa39008a 0%, #aa39008a 30%, #ccca458a 50%, #005eac8a 70%, #005eac8a 100%) !important;
+                /* linear-gradient(0deg #1C1C1E 0%, #00000000 20%) !important; */
+    }
+    .stst_background_img {
+        opacity: 0;
+    }
+    .stoptosuffertable tr {
+        height: auto;
+    }
+    .stst_of,
+    .stst_bf {
+        font-size: 50px;
+    }
+    .stst_os,
+    .stst_bs {
+        font-size: 65px;
+        -webkit-text-stroke-width: 2px;
+    }
+}
+@media screen and (max-width: 1060px) {
+    .stst_background_img {
+        display: none; /* Убираем изображение */
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .stoptosuffertable {
+        height: auto;
+    }
+    .stst_background_img {
+        width: 100%;
+        max-width: 800px;
+    }
+    .stst_of,
+    .stst_bf {
+        font-size: 40px;
+    }
+    .stst_os,
+    .stst_bs {
+        font-size: 60px;
+        -webkit-text-stroke-width: 2px;
+    }
+    .stoptosufferdiv {
+        height: auto;
+        font-size: 40px;
+        padding: 20px 0;
+    }
+    .stoptosuffertable-wrapper {
+        border-top: 2px solid #D6D6D6;
+    }
+}

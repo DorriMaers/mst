@@ -1,0 +1,12 @@
+body {
+    background-color: #0d0d0d;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-width: 0; /* Убираем min-width, чтобы сайт мог сжиматься */
+    box-sizing: border-box; /* Учитываем границы и отступы */
+}
+
+.source {
+    color: white;
+    text-decoration: none;
+}

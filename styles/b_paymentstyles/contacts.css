@@ -1,0 +1,39 @@
+.contactsdiv {
+    width: 100%;
+    max-width: 1920px;
+    background: linear-gradient(#131313 0%, #1C1C1E 50%);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+.contactsdiv p {
+    background-color: #FF5500;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    color: #3f2400;
+    font-size: 40px;
+    text-align: center;
+}
+.contactsdiv ol {
+    font-size: 24px;
+    max-width: 90%;
+    margin-left: 30px;
+}
+
+.condivhrwhite {
+    background-color: #1C1C1E;
+    width: 100%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.conhrwhite {
+    background-color: #fff;
+    height: 2px;
+    border: 0;
+    max-width: 1920px;
+}

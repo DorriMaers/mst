@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MST - о компании</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="shortcut icon" href="styles/images/logos/ico.png">
+    <script src="scripts/about.js"></script>
+    <script src="scripts/visitor-counter.js"></script>
+    <script src="scripts/tournament-timer.js"></script>
+    <script src="scripts/game-tip.js"></script>
+</head>
+<body>
+    <div class="headerdiv">
+        <table class="headertable" align="center">
+            <tr>
+                <td class="headerdificent"></td>
+                <td class="headerlogo" width="52" align="right"><a href="index.html" class="source"><img src="styles/images/logos/logo.png" height="110px" align="right"></a></td>
+                <td class="headertextmst"><a href="index.html" class="source">Mos Schoof Tank</a></td>
+                <td class="headertextindex"><a href="index.html" class="source">Брошюра</a></td>
+                <td class="headertextrewiews"><a href="reviews.html" class="source">Обратная связь</a></td>
+                <td class="headerbutton" width="180"><a href="payment.html">ЗАПИСАТЬСЯ</a></td>
+                <td class="headerdificent"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="demons-tion">
+        <div class="video-bg">
+            <video autoplay muted loop playsinline class="video-bg">
+                <source src="styles/videos/aboutpresentation.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео
+            </video>
+            <div class="video-bg_content">
+                <span>Mos Schoof Tank - научим нагибать!</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutdiv">
+        <div class="about-content">
+            <h1>О Mos Schoof Tank</h1>
+            <p>Добро пожаловать в <b>Mos Schoof Tank</b> — школу, где каждый танкист становится мастером Мира Танков! Мы превращаем новичков в уверенных игроков, а опытных бойцов — в настоящих чемпионов. Наша миссия — помочь тебе раскрыть потенциал и побеждать в каждом бою.</p>
+            <!-- Остальной контент без изменений -->
+            <h2>Кто мы?</h2>
+            <p>Мы — команда профессиональных тренеров, знающих Мир Танков от и до. За нашими плечами — более 150 обученных игроков, <a href="errorclantg.html" class="sourcespecial">топовый клан</a> и 5 побед в турнирах: 3 победы в международной "Схватке" и 2 в региональных "Клановых разборках". Наши ученики достигают процента побед выше 52%, и мы гордимся их успехами!</p>
+            <h2>Что мы предлагаем?</h2>
+            <p>Мы разработали два тарифа, чтобы подойти каждому:</p>
+            <ul>
+                <li><b>Стандартный тариф:</b> Учим стратегическому мышлению — куда ехать, как занимать позиции и доминировать на карте.</li>
+                <li><b>Продвинутый тариф:</b> Всё из стандартного + обучение прицеливанию, пробитию брони и танкованию на любом танке.</li>
+            </ul>
+            <p>Обучение проходит онлайн, преимущественно в Discord, но мы гибкие: выбирай удобную платформу или даже встречу вживую, если ты из Королёва!</p>
+            <h2>Почему выбирают нас?</h2>
+            <ul>
+                <li><b>Индивидуальный подход:</b> Разбираем твои ошибки и создаём персональный план обучения.</li>
+                <li><b>Гибкий график:</b> Занимайся, когда удобно тебе.</li>
+                <li><b>Практика и результат:</b> Наши методики проверены на сотнях боёв и реальных победах.</li>
+            </ul>
+            <p>Мы не просто учим играть — мы создаём сообщество, где ты найдёшь друзей, тактики и мотивацию. Запишись на курс и начни побеждать уже сегодня!</p>
+            <a href="payment.html" class="source"><button class="applybutton">Подать заявку</button></a>
+        </div>
+    </div>
+
+    <div class="visitor-counter">
+        <h2>На мои курсы заглянуло уже <span id="visitor-count">0</span> человек!</h2>
+    </div>
+
+    <div class="pollsdiv">
+        <div class="polls-content">
+            <h1>Пройди опросы и поделись мнением!</h1>
+            <div class="poll-carousel">
+                <div class="poll-slides-container">
+                    <div class="poll-slide active" data-slide="0">
+                        <h3>Какая нация в Мира Танков твоя любимая?</h3>
+                        <form class="poll-form" data-poll="nation">
+                            <input type="radio" name="nation" value="ussr"> СССР<br>
+                            <input type="radio" name="nation" value="germany"> Германия<br>
+                            <input type="radio" name="nation" value="usa"> США<br>
+                            <input type="radio" name="nation" value="france"> Франция<br>
+                            <input type="radio" name="nation" value="other"> Другая<br>
+                        </form>
+                    </div>
+                    <div class="poll-slide" data-slide="1">
+                        <h3>Какой класс техники тебе ближе?</h3>
+                        <form class="poll-form" data-poll="class">
+                            <input type="radio" name="class" value="heavy"> Тяжёлые танки<br>
+                            <input type="radio" name="class" value="medium"> Средние танки<br>
+                            <input type="radio" name="class" value="light"> Лёгкие танки<br>
+                            <input type="radio" name="class" value="td"> ПТ-САУ<br>
+                            <input type="radio" name="class" value="arty"> САУ<br>
+                        </form>
+                    </div>
+                    <div class="poll-slide" data-slide="2">
+                        <h3>Какая карта твоя любимая?</h3>
+                        <form class="poll-form" data-poll="map">
+                            <input type="radio" name="map" value="malinovka"> Монастырь<br>
+                            <input type="radio" name="map" value="prokhorovka"> Прохоровка<br>
+                            <input type="radio" name="map" value="himmelsdorf"> Химмельсдорф<br>
+                            <input type="radio" name="map" value="mines"> Рудники<br>
+                            <input type="radio" name="map" value="other"> Другая<br>
+                        </form>
+                    </div>
+                    <div class="poll-slide" data-slide="3">
+                        <h3>Какой стиль игры тебе нравится?</h3>
+                        <form class="poll-form" data-poll="style">
+                            <input type="radio" name="style" value="aggressive"> Агрессивный (атака, давление)<br>
+                            <input type="radio" name="style" value="passive"> Пассивный (засады, разведка)<br>
+                            <input type="radio" name="style" value="mixed"> Смешанный<br><br><br><br>
+                        </form>
+                    </div>
+                    <div class="poll-slide" data-slide="4">
+                        <h3>Какие бои больше всего предпочитаешь?</h3>
+                        <form class="poll-form" data-poll="mode">
+                            <input type="radio" name="mode" value="random"> Случайные бои<br>
+                            <input type="radio" name="mode" value="fortified"> Укрепрайоны<br>
+                            <input type="radio" name="mode" value="tournaments"> Турниры<br>
+                            <input type="radio" name="mode" value="both"> Всё вместе<br>
+                            <input type="radio" name="mode" value="other"> Другое<br>
+                        </form>
+                    </div>
+                </div>
+                <div class="poll-navigation">
+                    <button class="poll-prev" disabled>Назад</button>
+                    <button class="poll-next">Далее</button>
+                    <button class="poll-submit" style="display: none;">Отправить</button>
+                </div>
+            </div>
+            <div class="poll-modal" style="display: none;">
+                <div class="poll-modal-content">
+                    <h3>Ваши ответы:</h3>
+                    <ul id="poll-answers"></ul>
+                    <div class="poll-modal-buttons">
+                        <button class="poll-modal-cancel">Отмена</button>
+                        <button class="poll-modal-confirm">Подтвердить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-tip">
+        <h2>Игровой совет</h2>
+        <button id="tip-button">Получить совет</button>
+        <p id="tip-text">Нажми кнопку, чтобы получить совет по Миру Танков!</p>
+    </div>
+
+    <div class="tournament-timer">
+        <h2>До следующего турнира осталось <span id="tournament-countdown">...</span>!</h2>
+    </div>
+
+    <div class="sitediv">
+        <div class="sitemap">
+            <h1><a class="source" href="sitemap.html">Карта сайта</a></h1>
+            <ul>
+                <li><a href="index.html" class="source">Главная</a></li>
+                <li><a href="about.html" class="source">О компании</a></li>
+                <li><a href="reviews.html" class="source">Обратная связь</a></li>
+                <li><a href="payment.html" class="source">Записаться</a></li>
+                <li><a href="errorclantg.html" class="source">Клан и Telegram</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footerdiv">
+        <table class="footertable" align="center" width="1220">
+            <!-- <tr>
+                <td class="footerdificent" rowspan="2"></td>
+                <td class="footerlogo" width="52" rowspan="2"><img src="styles/images/logos/logo.png" height="240px" align="right"></td>
+                <td style="padding-bottom: 15px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Русский</b></td>
+                <td align="right"><b>Арабский</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td class="footerdificent" rowspan="2"></td>
+            </tr> -->
+            <tr>
+                <td class="footerlogo" rowspan="2"><img src="styles/images/logos/logo.png" height="270px" align="right"></td>
+                <td class="footerrustext">
+                    Контакты:
+                    <ul style="margin: 0; line-height: 20px;">
+                        <li><a href="tel:+79255777304" class="sourcespecial">8 (925) 577 73-04</a></li>
+                        <li><a href="https://t.me/xAdmin123" class="sourcespecial">@xAdmin123</li>
+                    </ul>
+                    <hr style="border: 1px solid #1C1C1E">
+                    <a href="mailto:boris_mas07@mail.ru" class="sourcespecial">Реклама на сайте</a>
+                    <br>
+                    <a href="mailto:boris_mas07@mail.ru" class="sourcespecial">Сотрудничество</a>
+                    <br>
+                    <a href="info.html" class="sourcespecial">Юристам</a>
+                    <br>
+                    <a href="sitemap.html" class="sourcespecial">Карта сайта</a>
+                </td>
+                <!-- <td class="footerarabtext">
+                    Контакты:
+                    <ul style="margin: 0; line-height: 20px;">
+                        <li>8 (925) 577 73-04</li>
+                        <li>@xAdmin123</li>
+                    </ul>
+                    <hr style="border: 1px solid #1C1C1E">
+                    <a href="https://t.me/xAdmin123" class="source">Реклама на сайте</a>
+                    <br>
+                    <a href="https://t.me/xAdmin123" class="source">Сотрудничество</a>
+                    <br>
+                    <a href="https://www.consultant.ru/" class="source">Юристам</a>
+                </td> -->
+            </tr>
+        </table>
+    </div>
+    
+    <button class="scroll-to-top" title="Наверх">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 5V19M12 5L5 12M12 5L19 12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+</body>
+</html>

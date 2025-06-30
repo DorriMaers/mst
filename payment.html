@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<head>
+    <title>MST - страница оплаты</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/payment.css">
+    <link rel="shortcut icon" href="styles/images/logos/ico.png">
+    <script src="scripts/payment.js"></script>
+    <script src="scripts/info.js"></script>
+</head>
+<body>
+
+    <div class="headerdiv">
+        <table class="headertable" align="center">
+            <!-- <tr>
+                <td colspan="7" class="headerskuf" align="center">скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф скуф</td>
+            </tr> -->
+            <tr>
+                <td class="headerdificent"></td>
+                <td class="headerlogo" width="52" align="right"><a href="index.html" class="source"><img src="styles/images/logos/logo.png" height="110px" align="right"></a></td>
+                <td class="headertextmst"><a href="index.html" class="source">Mos Schoof Tank</a></td>
+                <td class="headertextcompany"><a href="about.html" class="source">О компании</a></td>
+                <td class="headertextrewiews"><a href="reviews.html" class="source">Обратная связь</a></td>
+                <td class="headerbutton" width="180"><a href="index.html">НА ГЛАВНУЮ</a></td>
+                <td class="headerdificent"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="contactsdiv">
+        <p>Я рад, что вы проявили интерес к моим курсам по обучению игре!</p>
+        <ol>
+            <li>Если вы зашли сюда сами, то связаться со мной вы можете в телеграмме @xAdmin123, либо по телефону +7 (925) 577 73-04</li>
+            <li>Если мы уже разговаривали, то здесь вы можете оплатить курс. Пожалуйста, введите данные карты в нужные поля, а также имя, телефон и остальную информацию. Данные вашей карты для безопасности на сервере не сохранятся, они лишь будут единоразово использованы для опталы курса.</li>
+        </ol>
+    </div>
+    <div class="condivhrwhite">
+        <hr class="conhrwhite">
+    </div>
+
+    <div class="teachersdiv">
+        <h2>Наши преподаватели</h2>
+        <p>У нас работают два опытных преподавателя, готовых помочь вам освоить игру!</p>
+        <table class="teacherstable" align="center" width="1220">
+            <tr>
+                <td class="teachercol" align="center">
+                    <img src="styles/images/teachers/Teacher1.jpg" alt="Иван Петров" class="teacherphoto">
+                    <h3>Максим Огузков</h3>
+                    <p>Возможное время обучения:</p>
+                    <ul class="timeschedule">
+                        <li>9:00</li>
+                        <li>11:30</li>
+                        <li>14:00</li>
+                        <li>16:30</li>
+                        <li>19:00</li>
+                    </ul>
+                </td>
+                <td class="teachercol" align="center">
+                    <img src="styles/images/teachers/Teacher2.jpg" alt="Алексей Смирнов" class="teacherphoto">
+                    <h3>Вахит Баксутский</h3>
+                    <p>Возможное время обучения:</p>
+                    <ul class="timeschedule">
+                        <li>10:00</li>
+                        <li>13:30</li>
+                        <li>17:00</li>
+                        <li>20:30</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="choosediv">
+        <h1 align="center" style="color: #000000; background: #FF5500; -webkit-background-clip: text; -webkit-text-stroke: 4px transparent; text-decoration: underline 2px solid #FF6600;">Выбирай кем стать</h1>
+        <h2 style="padding-left: 20px; color:#e7e7e7"><i>Хорошим игроком:</i></h2>
+        <div style="color: #cacaca;">
+            <p style="padding-left: 40px;">Расскажу про:</p>
+            <div style="padding-left: 40px;">
+                <ul>
+                    <li>Позиции на карте</li>
+                    <li>Траектории разъездов</li>
+                </ul>
+            </div>
+        </div>
+        <h2 style="padding-left: 20px; color: #FF5000;"><i>Киберскуфом:</i></h2>
+        <p style="padding-left: 40px;">Расскажу про:</p>
+        <div style="color: #cacaca;">
+            <div style="padding-left: 40px;">
+                <ul>
+                    <li>Куда и на чём ехать</li>
+                    <li>Какое оборудование и какие снаряды брать</li>
+                    <li>Как пробивать любые танки</li>
+                    <li>Как танковать на любом танке</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+     <div class="fulldatadiv">
+        <form id="paymentForm" class="centerdiv">
+            <div class="datadiv">
+                <div class="inputbox1">
+                    <label>Ваше имя:</label>
+                    <input type="text" name="userName" id="userName" required>
+                </div>
+                <div class="inputbox2">
+                    <label>Ваш телефон:</label>
+                    <input type="tel" name="userPhone" id="userPhone" required>
+                </div>
+                <div class="inputbox3">
+                    <label>Ваш e-mail / телеграм:</label>
+                    <input type="text" name="userEmail" id="userEmail" required>
+                </div>
+            </div>
+            <div class="programdiv">
+                <div class="inputboxor">
+                    <label>Программа:</label>
+                    <select name="program" id="program" class="programselect" style='background: url("styles/images/backs/paymentselect1.png"); background-color: #fff; background-repeat: no-repeat; background-size: contain; background-position: right;' required>
+                        <option value="" disabled selected>Выберите программу</option>
+                        <option value="basic">Базовая</option>
+                        <option value="advanced">Продвинутая</option>
+                    </select>
+                </div>
+            </div>
+            <span class="datainfo">🛈</span>
+            <button type="submit" class="sendrequest">Отправить данные</button>
+
+            <div class="carddiv">
+                <table class="cardtable">
+                    <tr>
+                        <td colspan="2" class="cardcompany" align="center">нн карта</td>
+                        <td colspan="2" class="cardlogo" align="right"><img src="styles/images/cardslogos/noname.png" height="138"></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><input class="cardwritewhite" id="card1" maxlength="4" pattern="\d{4}" placeholder="1234" required></td>
+                        <td align="center"><input class="cardwritewhite" id="card2" maxlength="4" pattern="\d{4}" placeholder="1234" required></td>
+                        <td align="center"><input class="cardwritewhite" id="card3" maxlength="4" pattern="\d{4}" placeholder="1234" required></td>
+                        <td align="center"><input class="cardwritewhite" id="card4" maxlength="4" pattern="\d{4}" placeholder="1234" required></td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="2"><input class="cardwriteblack2" id="cardHolder" maxlength="50" pattern="[A-Za-z\s]+" placeholder="Имя Фамилия" required></td>
+                        <td align="center"><input class="cardwriteblack" id="cardExpiry" maxlength="5" pattern="\d{2}/\d{2}" placeholder="MM/YY" required></td>
+                        <td align="center"><input class="cardwritered" id="cardCvv" maxlength="3" pattern="\d{3}" placeholder="123" required></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="price-calculator">
+                <h3>Рассчитай стоимость курса</h3>
+                <div>
+                    <label for="frequency">Занятия:</label>
+                    <select id="frequency">
+                        <option value="0.5">1 раз в две недели</option>
+                        <option value="1">1 раз в неделю</option>
+                        <option value="2" selected>2 раза в неделю</option>
+                        <option value="3">3 раза в неделю</option>
+                        <option value="4">4 раза в неделю</option>
+                        <option value="5">5 раз в неделю</option>
+                        <option value="6">6 раз в неделю</option>
+                        <option value="7">7 раз в неделю</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="duration">По:</label>
+                    <select id="duration">
+                        <option value="0.5">30 минут</option>
+                        <option value="1">1 часу</option>
+                        <option value="1.5" selected>1.5 часа</option>
+                        <option value="2">2 часа</option>
+                        <option value="3">3 часа</option>
+                        <option value="4">4 часа</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="payment-term">Оплатить весь курс в течение:</label>
+                    <select id="payment-term">
+                        <option value="0.5">2 недель</option>
+                        <option value="1" selected>1 месяца</option>
+                        <option value="2">2 месяцев</option>
+                        <option value="3">3 месяцев</option>
+                        <option value="4">4 месяцев</option>
+                        <option value="5">5 месяцев</option>
+                        <option value="6">6 месяцев</option>
+                    </select>
+                </div>
+                <p>Итоговая стоимость: <span id="totalCost">10000</span></p>
+                <p style="font-size: 14px; color: #bbbbbb">P.s. измени значение списка "Программа" рядом с кнопкой отправки данных чтобы расчитать стоимость для продвинутого тарифа!</p>
+            </div>
+        </form>
+    </div>
+
+    <div id="confirmation" class="confirmation-dialog">
+        <div class="dialog-box">
+            <h3 class="dialog-title">Подтверждение оплаты</h3>
+            <p>Имя: <span id="confName"></span></p>
+            <p>Телефон: <span id="confPhone"></span></p>
+            <p>Email/Телеграм: <span id="confEmail"></span></p>
+            <p>Программа: <span id="confProgram"></span></p>
+            <p>Стоимость: <span id="confCost">10,000</span> ₽</p>
+            <div class="dialog-actions">
+                <button class="cancel-btn">Отмена</button>
+                <button class="confirm-btn">Подтвердить</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="fulldatamob">
+        <div class="datadivmob">
+            <label>Ваше имя:</label>
+            <br>
+            <input type="text" placeholder="Ваше имя">
+            <br>
+            <br>
+            <label>Ваш телефон:</label>
+            <br>
+            <input type="text" placeholder="Ваш телефон">
+            <br>
+            <br>
+            <label>Ваш e-mail / телеграм:</label>
+            <br>
+            <input type="text" placeholder="Ваш e-mail / телеграм">
+            <br>
+            <br>
+            <label>Программа:</label>
+            <select class="programselectmob" style='background: url("styles/images/backs/paymentselect1.png"); background-color: #fff; background-repeat: no-repeat; background-size: contain; background-position: right;'>
+                <option value="beginner">Выберите программу</option>
+                <option value="basic">Базовая программа</option>
+                <option value="advanced">Продвинутая программа</option>
+            </select>
+            <br>
+        </div>
+        <div class="datadivmob">
+            <div class="price-calculator2">
+                <h3>Рассчитай стоимость курса</h3>
+                <div>
+                    <label for="frequency2">Занятия:</label>
+                    <select id="frequency2">
+                        <option value="0.5">1 раз в две недели</option>
+                        <option value="1">1 раз в неделю</option>
+                        <option value="2" selected>2 раза в неделю</option>
+                        <option value="3">3 раза в неделю</option>
+                        <option value="4">4 раза в неделю</option>
+                        <option value="5">5 раз в неделю</option>
+                        <option value="6">6 раз в неделю</option>
+                        <option value="7">7 раз в неделю</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="duration2">По:</label>
+                    <select id="duration2">
+                        <option value="0.5">30 минут</option>
+                        <option value="1">1 часу</option>
+                        <option value="1.5" selected>1.5 часа</option>
+                        <option value="2">2 часа</option>
+                        <option value="3">3 часа</option>
+                        <option value="4">4 часа</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="payment-term2">Оплатить весь курс в течение:</label>
+                    <select id="payment-term2">
+                        <option value="0.5">2 недель</option>
+                        <option value="1" selected>1 месяца</option>
+                        <option value="2">2 месяцев</option>
+                        <option value="3">3 месяцев</option>
+                        <option value="4">4 месяцев</option>
+                        <option value="5">5 месяцев</option>
+                        <option value="6">6 месяцев</option>
+                    </select>
+                </div>
+                <p>Итоговая стоимость: <span id="total-cost">7500 ₽</span></p>
+            </div>
+            <br>
+            <a href="#" class="datainfomob">ℹ</a>
+            <br>
+            <br>
+            <button class="sendrequestmob" type="submit">Отправить данные</button>
+        </div>
+    </div>
+
+    <div align="center" class="divhrwhite" style="padding-top: 45px">
+        <hr class="hrwhite">
+    </div>
+
+    <div class="footerdiv">
+        <table class="footertable" align="center" width="1220">
+            <!-- <tr>
+                <td class="footerdificent" rowspan="2"></td>
+                <td class="footerlogo" width="52" rowspan="2"><img src="styles/images/logos/logo.png" height="240px" align="right"></td>
+                <td style="padding-bottom: 15px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Русский</b></td>
+                <td align="right"><b>Арабский</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td class="footerdificent" rowspan="2"></td>
+            </tr> -->
+            <tr>
+                <td class="footerlogo" rowspan="2"><img src="styles/images/logos/logo.png" height="270px" align="right"></td>
+                <td class="footerrustext">
+                    Контакты:
+                    <ul style="margin: 0; line-height: 20px;">
+                        <li><a href="tel:+79255777304" class="sourcespecial">8 (925) 577 73-04</a></li>
+                        <li><a href="https://t.me/xAdmin123" class="sourcespecial">@xAdmin123</li>
+                    </ul>
+                    <hr style="border: 1px solid #1C1C1E">
+                    <a href="mailto:boris_mas07@mail.ru" class="sourcespecial">Реклама на сайте</a>
+                    <br>
+                    <a href="mailto:boris_mas07@mail.ru" class="sourcespecial">Сотрудничество</a>
+                    <br>
+                    <a href="info.html" class="sourcespecial">Юристам</a>
+                    <br>
+                    <a href="sitemap.html" class="sourcespecial">Карта сайта</a>
+                </td>
+                <!-- <td class="footerarabtext">
+                    Контакты:
+                    <ul style="margin: 0; line-height: 20px;">
+                        <li>8 (925) 577 73-04</li>
+                        <li>@xAdmin123</li>
+                    </ul>
+                    <hr style="border: 1px solid #1C1C1E">
+                    <a href="https://t.me/xAdmin123" class="source">Реклама на сайте</a>
+                    <br>
+                    <a href="https://t.me/xAdmin123" class="source">Сотрудничество</a>
+                    <br>
+                    <a href="https://www.consultant.ru/" class="source">Юристам</a>
+                </td> -->
+            </tr>
+        </table>
+    </div>
+
+    <div id="confirmDialog" class="confirmation-dialog">
+            <div class="dialog-box">
+                <h3 class="dialog-title">Подтверждение оплаты</h3>
+                <p>Имя: <span id="displayName"></span></p>
+                <p>Телефон: <span id="displayPhone"></span></p>
+                <p>Email/Телеграм: <span id="displayEmail"></span></p>
+                <p>Программа: <span id="displayProgram"></span></p>
+                <p>Стоимость: <span id="displayCost">10,000 ₽</span></p>
+                <div class="dialog-actions">
+                    <button class="cancel-btn" onclick="hideDialog()">Отмена</button>
+                    <button class="confirm-btn" onclick="savePayment()">Подтвердить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="scroll-to-top" title="Наверх">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 5V19M12 5L5 12M12 5L19 12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+</body>

@@ -1,0 +1,224 @@
+.choosetable {
+    background-color: #1C1C1E;
+    color: white;
+    width: 100%;
+    max-width: 1920px;
+    border: 0;
+    font-size: 36px;
+    position: relative;
+    padding-bottom: 20px;
+    src: local(Roboto), url("fonts/Roboto/Roboto-Italic-VariableFont_wdth,wght.ttf");
+    border-top: 2px solid #969696;
+    box-sizing: border-box;
+}
+
+.standart {
+    width: 518px;
+    height: 900px;
+    color: white;
+}
+
+.standart-header {
+    background-color: #AEAEAE;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    color: #ff5500;
+    font-weight: 700;
+    font-size: 40px;
+    font-style: italic;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000000;
+    text-align: center;
+    cursor: pointer;
+    height: 50px;
+}
+
+.standart-content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.6s ease;
+}
+
+.standart-content.open {
+    height: 770px;
+}
+
+.standart-body {
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+}
+
+.standartvideo-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.standartvideo-overlay {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.standart-footer {
+    background-color: #AEAEAE;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+.cyberskoof {
+    width: 518px;
+    height: 900px;
+    color: white;
+}
+
+.cyberskoof-header {
+    background-color: #FF5500;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    color: black;
+    font-weight: 700;
+    font-size: 40px;
+    font-style: italic;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000000;
+    text-align: center;
+    cursor: pointer;
+    height: 50px;
+}
+
+.cyberskoof-content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.6s ease;
+}
+
+.cyberskoof-content.open {
+    height: 770px;
+}
+
+.cyberskoof-body {
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+}
+
+.cyberskoofvideo-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    z-index: 1 Shen;
+}
+
+.cyberskoofvideo-overlay {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.cyberskoof-footer {
+    background-color: #FF5500;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+.choosedivsmall {
+    background-color: #1C1C1E;
+    color: white;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px;
+    border-top: 2px solid #969696;
+    font-size: 20px;
+    display: none;
+    box-sizing: border-box;
+}
+
+.below-choose {
+    width: 100%;
+    max-width: 1920px;
+    transition: transform 0.8s ease;
+    position: absolute;
+    top: 1750px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.below-choose.shifted {
+    position: static;
+    margin: 0 auto;
+    top: auto;
+}
+
+@media screen and (max-width: 1584px) {
+    .below-choose {
+        top: 1770px;
+    }
+}
+
+@media screen and (max-width: 1555px) {
+    .below-choose {
+        top: 1860px;
+    }
+}
+
+@media screen and (max-width: 1359px) {
+    .below-choose {
+        top: 1900px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .below-choose {
+        top: 1900px;
+    }
+}
+
+@media screen and (max-width: 1132px) {
+    .below-choose {
+        top: 1910px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .choosediv {
+        display: none !important;
+    }
+    .choosedivsmall {
+        display: block;
+    }
+    .below-choose {
+        position: static;
+        top: auto;
+        margin: 0 auto;
+    }
+}

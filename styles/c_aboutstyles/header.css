@@ -1,0 +1,169 @@
+.headerdiv {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: none;
+    z-index: 1000;
+}
+
+.headerdiv {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: none;
+    z-index: 1000;
+}
+
+.headerdiv.fixed {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #131313;
+    box-shadow: 0 6px 6px -2px rgba(0, 0, 0, 0.5);
+    z-index: 10000000000000;
+}
+
+.headertable {
+    width: 100%;
+    max-width: 1920px;
+    background-color: #131313;
+    height: 142px;
+    color: white;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.headerskuf {
+    width: 100%;
+    max-width: 1920px;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 1em;
+    line-height: 1em;
+    color: #aeaeae;
+    background-color: #131313;
+    text-align: center;
+}
+
+.headerlogo {
+    padding-top: 2px;
+    text-align: right;
+}
+
+.headertextmst {
+    width: 600px;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+}
+
+.headertextindex {
+    width: 270px;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.headertextrewiews {
+    width: 140px;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.headertable td {
+    padding: 10px;
+}
+.headerbutton a {
+    width: 180px;
+    background-color: #ff6200;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 32px;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.headerbutton a:hover {
+    background-color: #FF7E00;
+}
+
+.headerdificent {
+    width: 230px;
+}
+
+@media screen and (max-width: 1550px) {
+    .headertextmst {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .headerbutton a {
+        font-size: 0;
+        background-color: #ff6200;
+        padding: 3px 5px;
+        width: auto;
+        line-height: normal;
+        text-align: center;
+    }
+    .headerbutton a::after {
+        content: "ЗАЯВКА";
+        font-size: 32px;
+        font-weight: bold;
+        color: white;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 877px) {
+    .headertable {
+        height: auto; /* Позволяем таблице сжиматься по высоте */
+    }
+    .headertextindex {
+        font-size: 0;
+        width: 100px;
+        text-align: center;
+    }
+    .headertextindex::after {
+        content: "Брошюра";
+        font-size: 30px; /* Уменьшаем шрифт */
+        font-weight: bold;
+        color: white;
+        display: block;
+    }
+    .headertextrewiews {
+        font-size: 0;
+        width: 120px;
+    }
+    .headertextrewiews::after {
+        content: "Обр. Связь";
+        font-size: 30px; /* Уменьшаем шрифт */
+        font-weight: bold;
+        color: white;
+        display: block;
+    }
+    .headerdificent {
+        display: none;
+    }
+    .headerbutton {
+        text-align: right;
+    }
+    .headerbutton a {
+        padding: 3px 5px;
+        width: auto;
+    }
+    .headerbutton a::after {
+        font-size: 24px; /* Уменьшаем шрифт кнопки */
+    }
+}

@@ -1,0 +1,456 @@
+@import url("a_mainstyles/body.css");
+@import url("c_aboutstyles/header.css");
+@import url("f_infostyles/footer.css");
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Видео-блок */
+.demons-tion {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.demons-tion.hidden {
+    display: none;
+}
+
+.video-bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-bg video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.video-bg_content {
+    z-index: 2;
+    color: #ffffff;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+}
+
+/* Контент под шапкой */
+.aboutdiv {
+    background: linear-gradient(#131313 0%, #1C1C1E 40%);
+    width: 100%;
+    max-width: 1920px;
+    padding-top: 142px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+
+.aboutdiv.visible {
+    opacity: 1;
+}
+
+.aboutdiv.fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.about-content {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 60px 20px 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(#131313 0%, #000000b9 30% 70%, #1C1C1E 100%), url("images/tanks/tankT-72.jpeg") no-repeat center/cover;
+}
+
+.about-content h1, .about-content h2 {
+    padding-bottom: 20px;
+    color: #FF5000;
+    background-color: #000000;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    text-align: left;
+}
+
+.about-content p, .about-content ul {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.about-content ul {
+    padding-left: 30px;
+    text-align: left;
+}
+
+.about-content button.applybutton {
+    background: #FF5000;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.about-content button.applybutton:hover {
+    background: #FF7E00;
+}
+
+.pollsdiv {
+    background-color: #1C1C1E;
+    width: 100%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.polls-content {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 80px;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(50% 50% at 50% 50%, #cecece8a 0%, #1C1C1E 90.29%);
+}
+
+.polls-content h1 {
+    padding-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(90deg, #2f00ff 43%, #af0035 50%, #ff5500 75%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+}
+
+.poll-carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.poll-slide {
+    display: none;
+    padding: 20px;
+    background: linear-gradient(#00000083 0%, #000000c2 100%), url("images/tanks/tankSU130-PM+Lowe.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 32px;
+    border: 2px solid #d4d4d4;
+    height: 330px;
+}
+
+.poll-slide.active {
+    display: block;
+    opacity: 1;
+}
+
+.poll-slide h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.poll-slide form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+.poll-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.poll-navigation button {
+    background: #FF5000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.poll-navigation button:hover {
+    background: #e64500;
+}
+
+.poll-navigation button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    color: black;
+}
+
+.poll-navigation .poll-submit {
+    background: #00cc00;
+}
+
+.poll-navigation .poll-submit:hover {
+    background: #00b300;
+}
+
+.poll-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.poll-modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.poll-modal-content h3 {
+    color: #FF5000;
+    margin-bottom: 15px;
+}
+
+.poll-modal-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.poll-modal-content ul li {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.poll-modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.poll-modal-confirm {
+    background: #00cc00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.poll-modal-confirm:hover {
+    background: #00b300;
+}
+
+.poll-modal-cancel {
+    background: #FF5000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.poll-modal-cancel:hover {
+    background: #e64500;
+}
+
+.sitediv {
+    background-color: #1C1C1E;
+    width: 100%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 0;
+}
+
+.sitemap {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 60px 20px 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-align: left;
+    background: linear-gradient(#FF5000 0%, #0000007c 15% 80%, #1C1C1E 100%), url("images/tanks/tankLeopard-1.jpg") no-repeat center/cover;
+    font-size: 24px;
+}
+
+.sitemap h1 {
+    color: #FFFFFF;
+    background-color: #FF5000;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 7px transparent;
+}
+
+.sitemap ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sitemap ul li {
+    margin: 10px 0;
+}
+
+.sitemap ul li a {
+    color: #FF5000;
+    background-color: #000000;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sitemap ul li a:hover {
+    text-decoration: underline;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.scroll-to-top:hover {
+    background-color: #f0f0f0;
+}
+
+.visitor-counter {
+    background-color: #1C1C1E;
+    width: 100%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+.visitor-counter h2 {
+    font-size: 28px;
+    color: #FF5000;
+    background-color: #000000;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    margin: 0;
+}
+.visitor-counter #visitor-count {
+    color: #ffffff;
+    font-weight: bold;
+}
+.tournament-timer {
+    background-color: #1C1C1E;
+    width: 100%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+.tournament-timer h2 {
+    font-size: 28px;
+    color: #FF5000;
+    background-color: #000000;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    margin: 0;
+}
+.tournament-timer #tournament-countdown {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.game-tip {
+    background-color: #1C1C1E;
+    width: 100%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+.game-tip h2 {
+    font-size: 28px;
+    color: #FF5000;
+    background-color: #000000;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    margin: 0 0 20px 0;
+}
+.game-tip button {
+    background: #FF5000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.game-tip button:hover {
+    background: #e64500;
+}
+.game-tip p {
+    font-size: 18px;
+    color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+}

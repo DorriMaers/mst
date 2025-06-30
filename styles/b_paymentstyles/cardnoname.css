@@ -1,0 +1,140 @@
+.paymentdiv {
+    background-color: #1C1C1E;
+    width: 100%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+}
+.carddiv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 350px;
+
+    background: radial-gradient(74.25% 74.25% at 50% 50%, #C1C1C1 0%, #545454 100%);
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+    color: white;
+    font-size: 64px;
+
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.cardtable {
+    width: 100%;
+    height: 100%;
+}
+.cardtable td {
+    width: 150px;
+}
+.cardtable input {
+    color: #ffffff;
+    font-size: 32px;
+}
+.cardtable input:focus {
+    color: #FF5500;
+    font-size: 32px;
+}
+.cardcompany .cardlogo {
+    vertical-align: middle;
+}
+.cardwritewhite {
+    background: #00000030;
+    border: 3px solid #FFFFFF;
+    vertical-align: top;
+
+    width: 120px;
+    height: 40px;
+}
+.cardwriteblack {
+    background: #ffffff30;
+    border: 3px solid #000000;
+    vertical-align: top;
+
+    width: 120px;
+    height: 40px;
+}
+.cardwriteblack2 {
+    background: #ffffff30;
+    border: 3px solid #000000;
+    vertical-align: top;
+
+    width: 273px;
+    height: 40px;
+}
+.cardwritered {
+    background: #00000030;
+    border: 3px solid #FF4141;
+    vertical-align: top;
+    
+    width: 120px;
+    height: 40px;
+}
+.cardwritewhite:hover{
+    border: 3px solid #0000009a;
+    border-bottom: #FF5500 3px solid;
+
+    width: 120px;
+    height: 40px;
+}
+.cardwriteblack:hover {
+    background-color: #33333330;
+    border: 3px solid #1d1d1d;
+    border-bottom: #FF5500 3px solid;
+
+    width: 120px;
+    height: 40px;
+}
+.cardwriteblack2:hover {
+    background-color: #33333330;
+    border: 3px solid #1d1d1d;
+    border-bottom: #FF5500 3px solid;
+
+    width: 273px;
+    height: 40px;
+}
+.cardwritered:hover {
+    border: 3px solid #4600009a;
+    border-bottom: #FF5500 3px solid;
+
+    width: 120px;
+    height: 40px;
+}
+.cardwritewhite:focus{
+    background: rgba(0, 0, 0, 0.733);
+    border: none;
+    border-bottom: #FF5500 3px solid;
+    outline: none;
+
+    width: 126px;
+    height: 43px;
+}
+.cardwriteblack:focus {
+    background: rgba(0, 0, 0, 0.603);
+    border: none;
+    border-bottom: #FF5500 3px solid;
+    outline: none;
+
+    width: 126px;
+    height: 43px;
+}
+.cardwriteblack2:focus {
+    background: rgba(0, 0, 0, 0.603);
+    border: none;
+    border-bottom: #FF5500 3px solid;
+    outline: none;
+
+    width: 279px;
+    height: 43px;
+}
+.cardwritered:focus {
+    background: #4600009a;
+    border: none;
+    border-bottom: #FF5500 3px solid;
+    outline: none;
+
+    width: 126px;
+    height: 43px;
+}

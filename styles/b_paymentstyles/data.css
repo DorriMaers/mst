@@ -1,0 +1,364 @@
+.fulldatadiv {
+    background-color: #1C1C1E;
+    width: 100%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    padding-top: 20px;
+}
+.centerdiv {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.datadiv {
+    position: relative;
+    left: 0px;
+    width: 850px;
+    height: 115px;
+    background-color: #393939;
+    border-radius: 15px;
+    color: #FF5500;
+    z-index: 1;
+}
+.inputbox1 {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+.inputbox2 {
+    position: absolute;
+    top: 20px;
+    left: 305px;
+}
+.inputbox3 {
+    position: absolute;
+    top: 20px;
+    left: 580px;
+}
+
+.inputbox1 input {
+    position: absolute;
+    top: 30px;
+    left: 2px;
+    width: 220px;
+    height: 30px;
+    
+    background: #6C6C6C;
+    border: 2px solid #C3C3C3;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.inputbox2 input {
+    position: absolute;
+    top: 30px;
+    left: 2px;
+    width: 220px;
+    height: 30px;
+    
+    background: #6C6C6C;
+    border: 2px solid #C3C3C3;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.inputbox3 input {
+    position: absolute;
+    top: 30px;
+    left: 2px;
+    width: 220px;
+    height: 30px;
+    
+    background: #6C6C6C;
+    border: 2px solid #C3C3C3;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.inputbox1 input:hover {
+    width: 218px;
+    height: 28px;
+    
+    background: #6C6C6C;
+    border: 3px solid #ffffff;
+}
+.inputbox2 input:hover {
+    width: 218px;
+    height: 28px;
+    
+    background: #6C6C6C;
+    border: 3px solid #ffffff;
+}
+.inputbox3 input:hover {
+    width: 218px;
+    height: 28px;
+    
+    background: #6C6C6C;
+    border: 3px solid #ffffff;
+}
+.inputbox1 input:focus {
+    width: 218px;
+    height: 28px;
+    
+    background: #1c1c1e;
+    border: 3px solid #361300;
+    outline: none;
+    font-size: 20px;
+    color: #FF5500;
+}
+.inputbox2 input:focus {
+    width: 218px;
+    height: 28px;
+    
+    background: #1c1c1e;
+    border: 3px solid #361300;
+    outline: none;
+    font-size: 20px;
+    color: #FF5500;
+}
+.inputbox3 input:focus {
+    width: 218px;
+    height: 28px;
+    
+    background: #1c1c1e;
+    border: 3px solid #361300;
+    outline: none;
+    font-size: 20px;
+    color: #FF5500;
+}
+
+.programdiv {
+    position: relative;
+    top: -30px;
+    left: 1px;
+    z-index: 0;
+    width: 300px;
+    height: 130px;
+    background-color: #FF5500;
+    border-radius: 15px;
+    color: #000;
+    font-size: 24px;
+}
+.inputboxor {
+    position: relative;
+    top: 35px;
+    left: 30px;
+}
+.programselect {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 220px;
+    height: 30px;
+    font-size: 16px;
+    border: 2px solid #444444;
+    appearance: none;
+}
+.programselect:focus {
+    background-color: #000;
+    color: #222;
+    outline: none; 
+}
+
+.datainfo {
+    position: relative; /* Для позиционирования подсказки */
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer;
+    color: #FFA278;
+    top: -130px;
+    left: 360px;
+}
+.datainfo::after {
+    content: "Для отправки заявки введите только имя и телефон или\Aе-mail/телеграм, для оплаты введите данные всех полей"; /* \A — перенос строки */
+    white-space: pre; /* Сохраняем перенос строки */
+    position: absolute;
+    top: 120%; /* Располагаем подсказку над ссылкой */
+    left: 800%;
+    transform: translateX(-50%); /* Центрируем по горизонтали */
+    background-color: #C7A186;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    opacity: 0; /* Изначально скрыта */
+    visibility: hidden; /* Не отображается */
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    z-index: 10; /* Поверх других элементов */
+}
+
+.datainfo:hover::after {
+    opacity: 1; /* Показываем при наведении */
+    visibility: visible;
+}
+
+.datainfo.hidden::after {
+    opacity: 0; /* Плавное выцветание */
+    visibility: hidden;
+}
+
+.sendrequest {
+    position: relative;
+    top: -70px;
+    left: 540px;
+    width: 280px;
+    height: 50px;
+    background-color: #ff6200;
+    border: 0;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 26px;
+    white-space: nowrap;
+}
+.sendrequest:hover {
+    background-color: #2B2B2B;
+    border: 2px solid #FF5500;
+    color: #FF5500;
+    width: 280px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+
+.fulldatamob {
+    display: none; /* Скрыт по умолчанию */
+}
+.datadivmob {
+    background-color: #1C1C1E;
+    color: white;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 24px;
+}
+.datainfomob {
+    position: relative; /* Для позиционирования подсказки */
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer;
+    color: #FFA278;
+}
+
+.fulldatamob input {
+    width: 220px;
+    height: 30px;
+    
+    background: #6C6C6C;
+    border: 2px solid #C3C3C3;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.fulldatamob input:focus {
+    width: 218px;
+    height: 28px;
+    outline: none;
+    
+    background: #6C6C6C;
+    border: 3px solid #ffffff;
+}
+.programselectmob {
+    width: 220px;
+    height: 30px;
+    font-size: 16px;
+    border: 2px solid #444444;
+    appearance: none;
+}
+.programselectmob:focus {
+    background-color: #000;
+    color: #222;
+    outline: none; 
+}
+.datainfomob::after {
+    content: "Для отправки заявки введите только имя и телефон или\Aе-mail/телеграм, для оплаты введите данные всех полей"; /* \A — перенос строки */
+    white-space: pre; /* Сохраняем перенос строки */
+    position: absolute;
+    top: -350%; /* Располагаем подсказку над ссылкой */
+    left: 1700%;
+    transform: translateX(-50%); /* Центрируем по горизонтали */
+    background-color: #C7A186;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    opacity: 0; /* Изначально скрыта */
+    visibility: hidden; /* Не отображается */
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    z-index: 10; /* Поверх других элементов */
+}
+
+.datainfomob:hover::after {
+    opacity: 1; /* Показываем при наведении */
+    visibility: visible;
+}
+
+.datainfomob.hidden::after {
+    opacity: 0; /* Плавное выцветание */
+    visibility: hidden;
+}
+.sendrequestmob {
+    position: relative;
+    background-color: #ff6200;
+    border: 0;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    white-space: nowrap;
+    width: 260px;
+    height: 45px;
+}
+.sendrequestmob:hover {
+    background-color: #2B2B2B;
+    border: 2px solid #FF5500;
+    color: #FF5500;
+    cursor: pointer;
+    width: 260px;
+    height: 45px;
+}
+
+.fulldatamob .datadiv input,
+.fulldatamob .datadiv select {
+    width: 300px; /* Ширина инпутов */
+    font-size: 24px; /* Размер шрифта */
+    margin-bottom: 15px; /* Отступ между полями */
+    padding: 10px; /* Внутренние отступы */
+    border: 2px solid #C3C3C3;
+    background-color: #6C6C6C;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.fulldatamob .datadiv label {
+    display: block; /* Вертикальное расположение */
+    margin-bottom: 5px; /* Отступ под надписью */
+    color: #FF5500;
+    font-size: 24px;
+}
+
+.fulldatamob .datainfo {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.fulldatamob .sendrequest {
+    width: 300px;
+    height: 50px;
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 860px) {
+    .fulldatadiv {
+        display: none; /* Скрываем десктопную версию */
+    }
+    .fulldatamob {
+        display: block; /* Показываем мобильную версию */
+    }
+}
