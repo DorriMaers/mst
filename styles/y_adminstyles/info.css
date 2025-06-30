@@ -1,0 +1,316 @@
+.infodiv {
+    position: relative;
+    left: 0px;
+    width: 850px;
+    height: 115px;
+    background-color: #393939;
+    border-radius: 15px;
+    color: #FF5500;
+    z-index: 1;
+    font-size: 24px;
+}
+.inputbox1 {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+.inputbox2 {
+    position: absolute;
+    top: 20px;
+    left: 305px;
+}
+.inputbox3 {
+    position: absolute;
+    top: 20px;
+    left: 580px;
+}
+
+.inputbox1 input {
+    position: absolute;
+    top: 30px;
+    left: 2px;
+    width: 220px;
+    height: 30px;
+    
+    background: #6C6C6C;
+    border: 2px solid #C3C3C3;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.inputbox2 input {
+    position: absolute;
+    top: 30px;
+    left: 2px;
+    width: 220px;
+    height: 30px;
+    
+    background: #6C6C6C;
+    border: 2px solid #C3C3C3;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.inputbox3 input {
+    position: absolute;
+    top: 30px;
+    left: 2px;
+    width: 220px;
+    height: 30px;
+    
+    background: #6C6C6C;
+    border: 2px solid #C3C3C3;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.inputbox1 input:hover {
+    width: 218px;
+    height: 28px;
+    
+    background: #6C6C6C;
+    border: 3px solid #ffffff;
+}
+.inputbox2 input:hover {
+    width: 218px;
+    height: 28px;
+    
+    background: #6C6C6C;
+    border: 3px solid #ffffff;
+}
+.inputbox3 input:hover {
+    width: 218px;
+    height: 28px;
+    
+    background: #6C6C6C;
+    border: 3px solid #ffffff;
+}
+.inputbox1 input:focus {
+    width: 218px;
+    height: 28px;
+    
+    background: #1c1c1e;
+    border: 3px solid #361300;
+    outline: none;
+    font-size: 20px;
+    color: #FF5500;
+}
+.inputbox2 input:focus {
+    width: 218px;
+    height: 28px;
+    
+    background: #1c1c1e;
+    border: 3px solid #361300;
+    outline: none;
+    font-size: 20px;
+    color: #FF5500;
+}
+.inputbox3 input:focus {
+    width: 218px;
+    height: 28px;
+    
+    background: #1c1c1e;
+    border: 3px solid #361300;
+    outline: none;
+    font-size: 20px;
+    color: #FF5500;
+}
+
+.programdiv {
+    position: relative;
+    top: -30px;
+    left: 1px;
+    z-index: 0;
+    width: 300px;
+    height: 130px;
+    background-color: #C2C2C2;
+    border-radius: 15px;
+    color: #000;
+    font-size: 24px;
+}
+.inputboxor {
+    position: relative;
+    top: 35px;
+    left: 30px;
+}
+.programselect {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 220px;
+    height: 30px;
+    font-size: 16px;
+    border: 2px solid #444444;
+}
+
+.pricediv {
+    position: relative;
+    top: -30px;
+    left: 548px;
+    z-index: 0;
+    width: 300px;
+    height: 130px;
+    background-color: #C2C2C2;
+    border-radius: 15px;
+    color: #000;
+    font-size: 24px;
+}
+.inputboxor2 {
+    position: relative;
+    top: 35px;
+    left: 30px;
+}
+.priceinput {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 220px;
+    height: 30px;
+    font-size: 16px;
+    border: 2px solid #444444;
+    appearance: none;
+}
+.priceinput:hover {
+    border-color: aqua;
+}
+.priceinput:focus {
+    background-color: #555555;
+    color: #ffffff;
+    outline: none; 
+}
+
+.searchinput {
+    width: 208px;
+    height: 30px;
+    border: 0px;
+    outline:none;
+}
+
+.carddiv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 100px;
+
+    background: radial-gradient(74.25% 74.25% at 50% 50%, #C1C1C1 0%, #545454 100%);
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+    color: white;
+    font-size: 64px;
+
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.cardtable {
+    width: 100%;
+    height: 100%;
+}
+.cardtable td {
+    width: 150px;
+}
+.cardtable input {
+    color: #ffffff;
+    font-size: 32px;
+}
+.cardtable input:focus {
+    color: #FF5500;
+    font-size: 32px;
+}
+.cardcompany .cardlogo {
+    vertical-align: middle;
+}
+.cardwritewhite {
+    background: #00000030;
+    border: 3px solid #FFFFFF;
+
+    width: 120px;
+    height: 40px;
+}
+.cardwriteblack {
+    background: #ffffff30;
+    border: 3px solid #000000;
+    vertical-align: top;
+
+    width: 120px;
+    height: 40px;
+}
+.cardwriteblack2 {
+    background: #ffffff30;
+    border: 3px solid #000000;
+    vertical-align: top;
+
+    width: 273px;
+    height: 40px;
+}
+.cardwritered {
+    background: #00000030;
+    border: 3px solid #FF4141;
+    vertical-align: top;
+    
+    width: 120px;
+    height: 40px;
+}
+.cardwritewhite:hover{
+    border: 3px solid #0000009a;
+    border-bottom: #FF5500 3px solid;
+
+    width: 120px;
+    height: 40px;
+}
+.cardwriteblack:hover {
+    background-color: #33333330;
+    border: 3px solid #1d1d1d;
+    border-bottom: #FF5500 3px solid;
+
+    width: 120px;
+    height: 40px;
+}
+.cardwriteblack2:hover {
+    background-color: #33333330;
+    border: 3px solid #1d1d1d;
+    border-bottom: #FF5500 3px solid;
+
+    width: 273px;
+    height: 40px;
+}
+.cardwritered:hover {
+    border: 3px solid #4600009a;
+    border-bottom: #FF5500 3px solid;
+
+    width: 120px;
+    height: 40px;
+}
+.cardwritewhite:focus{
+    background: rgba(0, 0, 0, 0.733);
+    border: none;
+    border-bottom: #FF5500 3px solid;
+    outline: none;
+
+    width: 126px;
+    height: 43px;
+}
+.cardwriteblack:focus {
+    background: rgba(0, 0, 0, 0.603);
+    border: none;
+    border-bottom: #FF5500 3px solid;
+    outline: none;
+
+    width: 126px;
+    height: 43px;
+}
+.cardwriteblack2:focus {
+    background: rgba(0, 0, 0, 0.603);
+    border: none;
+    border-bottom: #FF5500 3px solid;
+    outline: none;
+
+    width: 279px;
+    height: 43px;
+}
+.cardwritered:focus {
+    background: #4600009a;
+    border: none;
+    border-bottom: #FF5500 3px solid;
+    outline: none;
+
+    width: 126px;
+    height: 43px;
+}

@@ -1,0 +1,55 @@
+@import url("a_mainstyles/body.css");
+@import url("a_mainstyles/header.css");
+@import url("a_mainstyles/imbaq.css");
+@import url("a_mainstyles/choose.css");
+@import url("a_mainstyles/sprunes.css");
+@import url("a_mainstyles/stoptosuffer.css");
+@import url("f_infostyles/footer.css");
+
+
+.goodluckdiv {
+    background-color: #1C1C1E;
+    width: 100%;
+    max-width: 1920px;
+    border: 0;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.goodluck {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 64px;
+    color: #431A00;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #ffffff;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.scroll-to-top:hover {
+    background-color: #f0f0f0;
+}

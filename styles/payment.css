@@ -1,0 +1,209 @@
+@import url("a_mainstyles/body.css");
+@import url("a_mainstyles/header.css");
+@import url("b_paymentstyles/contacts.css");
+@import url("b_paymentstyles/choose.css");
+@import url("b_paymentstyles/data.css");
+@import url("b_paymentstyles/cardnoname.css");
+@import url("f_infostyles/footer.css");
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.scroll-to-top:hover {
+    background-color: #f0f0f0;
+}
+
+.price-calculator {
+    background-color: #313131;
+    max-width: 800px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    border-radius: 5px;
+    text-align: left;
+    border-radius: 33px;
+}
+
+.price-calculator h3 {
+    font-size: 24px;
+    color: #FF5000;
+    background-color: #000000;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.price-calculator div {
+    margin-bottom: 10px;
+}
+.price-calculator label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+.price-calculator select {
+    padding: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #131313;
+    border: 1px solid #FF5000;
+    border-radius: 5px;
+}
+.price-calculator p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.price-calculator #total-cost {
+    color: #FF5000;
+}
+
+.confirmation-dialog {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1001;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-box {
+    background: #1C1C1E;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.dialog-title {
+    color: #FF5000;
+    margin-bottom: 15px;
+}
+
+.dialog-actions {
+    margin-top: 20px;
+}
+
+.cancel-btn, .confirm-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background: #FF5000;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background: #e64500;
+}
+
+.confirm-btn {
+    background: #00cc00;
+    color: white;
+}
+
+.confirm-btn:hover {
+    background: #00b300;
+}
+
+
+.teachersdiv {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+    width: 100%;
+    max-width: 1920px;
+    text-align: center;
+    background-color: #1C1C1E;
+}
+
+.teachersdiv h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #FF5500;
+}
+
+.teachersdiv p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.teacherstable {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1220px;
+}
+
+.teachercol {
+    width: 50%;
+    padding: 20px;
+    vertical-align: top;
+}
+
+.teacherphoto {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.teachercol h3 {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #6363ff;
+}
+
+.teachercol p {
+    font-size: 1.4em;
+    margin: 5px 0;
+    color: #bdbdbd;
+}
+
+.timeschedule {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.timeschedule li {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #adadad;
+}

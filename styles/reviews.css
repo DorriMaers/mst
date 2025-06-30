@@ -1,0 +1,335 @@
+@import url("a_mainstyles/body.css");
+@import url("d_reviewsstyles/header.css");
+@import url("f_infostyles/footer.css");
+
+.reviewsdiv {
+    background-color: #1C1C1E;
+    width: 100%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 0;
+}
+
+.contacts-content, .map-content, .intro-content, .reviews-content, .feedback-content {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 80px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #1C1C1E;
+}
+
+.contacts-content {
+    background: linear-gradient(#131313 0%, #000000b9 30% 70%, #1C1C1E 100%), url('images/tanks/tankT-72.jpeg') no-repeat center/cover;
+}
+
+.contacts-content h1, .map-content h1, .intro-content h1, .reviews-content h1, .feedback-content h1 {
+    padding-bottom: 20px;
+    color: #FF5000;
+    background-color: #000000;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    text-align: left;
+}
+
+.contacts-content p, .map-content p, .intro-content p, .reviews-content p, .feedback-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.contacts-content a, .feedback-content a {
+    color: #FF5000;
+    text-decoration: none;
+}
+
+.contacts-content a:hover, .feedback-content a:hover {
+    text-decoration: underline;
+}
+
+.map-content, .intro-content, .reviews-content, .feedback-content {
+    margin-top: 40px;
+}
+
+.reviews-content .review {
+    margin-bottom: 20px;
+}
+
+.reviews-content .review h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.reviews-content .review p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.feedback-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feedback-content form label {
+    font-size: 18px;
+}
+
+.feedback-content form input, .feedback-content form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #d4d4d4;
+    background-color: #2a2a2c;
+    color: #fff;
+}
+
+.feedback-content form button {
+    background: #FF5000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.feedback-content form button:hover {
+    background: #FF7E00;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #1C1C1E;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.modal-content h3 {
+    color: #FF5000;
+    margin-bottom: 15px;
+}
+
+.modal-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.modal-cancel, .modal-confirm {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+
+.modal-cancel {
+    background: #FF5000;
+}
+
+.modal-cancel:hover {
+    background: #e64500;
+}
+
+.modal-confirm {
+    background: #00cc00;
+}
+
+.modal-confirm:hover {
+    background: #00b300;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.scroll-to-top:hover {
+    background-color: #f0f0f0;
+}
+
+
+.review-section {
+    background-color: #1C1C1E;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.review-title {
+    color: #FF5000;
+    background-color: #000000;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.review-form .form-field {
+    margin-bottom: 15px;
+}
+
+.review-form label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.review-form input, .review-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #FF5000;
+    border-radius: 5px;
+    background-color: #2a2a2c;
+    color: #fff;
+}
+
+.review-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background: #FF5000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #FF7E00;
+}
+
+.confirmation-dialog {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1001;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-box {
+    background: #1C1C1E;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+.dialog-title {
+    color: #FF5000;
+    margin-bottom: 15px;
+}
+
+.dialog-actions {
+    margin-top: 20px;
+}
+
+.cancel-btn, .confirm-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background: #FF5000;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background: #e64500;
+}
+
+.confirm-btn {
+    background: #00cc00;
+    color: white;
+}
+
+.confirm-btn:hover {
+    background: #00b300;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.scroll-to-top:hover {
+    background-color: #f0f0f0;
+}

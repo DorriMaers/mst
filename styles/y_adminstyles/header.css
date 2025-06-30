@@ -1,0 +1,46 @@
+.headertable {
+    width: 100%;
+    max-width: 1920px;
+    background-color: #131313;
+    height: 120px;
+    color: white;
+    border: 0;
+    
+}
+.headerlogo {
+    padding-top: 2px;
+}
+.headertextmst {
+    width: 250px;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+}
+.headertexadminpage {
+    width: 350px;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: left;
+    white-space: nowrap;
+}
+.headerbutton a {
+    width: 180px;
+    background-color: #ff6200;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 32px;
+    white-space: nowrap;
+}
+.headerbutton a:hover {
+    background-color: #FF7E00;
+}
+.headerdificent {
+    /* width: calc(100% - 600px - 270px - 120px - 180px); */
+    width: 300px;
+}
